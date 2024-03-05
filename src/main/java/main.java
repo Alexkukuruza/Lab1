@@ -17,6 +17,8 @@ public class main {
             System.out.print("Человек, это не число, я отключаюсь! ");
             return;
         }
+
+
         try {
             debugNum = Integer.parseInt(numstr2);
         } catch (NumberFormatException e) {
@@ -53,7 +55,7 @@ public class main {
                 }
 
         }
-        
+
 
     }
 }
