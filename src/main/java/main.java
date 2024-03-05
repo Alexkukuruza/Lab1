@@ -25,10 +25,7 @@ public class main {
         }
         int num0 = Integer.parseInt(numstr0);
         int num2 = Integer.parseInt(numstr2);
-        if (num2 == 0){
-            System.out.print("Я не буду делить на ноль, пока, человек! ");
-            return;
-        }
+        
         switch (numstr1) {
             case "+":{
                 int res0 = num0 + num2;
@@ -43,6 +40,10 @@ public class main {
                 System.out.print("Вот результат: " + res2);
                 break;
             case "/":
+            if (num2 == 0){
+                System.out.print("Я не буду делить на ноль, пока, человек! ");
+                break;
+            }
                 int res3 = num0 / num2;
                 System.out.print("Вот результат: " + res3);
                 break;
@@ -52,6 +53,7 @@ public class main {
                 }
 
         }
+        
 
     }
 }
